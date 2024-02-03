@@ -1,6 +1,8 @@
 const express = require("express");
-const Router = express.Router();
+const Router = express.Router;
 const bcrypt = require("bcrypt");
+const passport = require("passport");
+const { supabase } = require("../supabase/supabase");
 
 //POST /signup
 //retrieves user registration username/password, hashes password
@@ -47,6 +49,15 @@ const LoginUser = (supabase) => {
     res.json({ isLoggedIn: passwordsMatch });
   };
 };
+
+//POST /logout
+//logs out user
+const LogoutUser = (supabase) =>{
+  return async (req, res, next) => {
+    req.logout();
+    req.send("Logged out")
+  }
+}
 //Error handling
 
 //sends error if username exists already
@@ -74,10 +85,31 @@ const doesUsernameExist = (supabase) => {
 };
 
 const AuthRouter = (supabase) => {
-  const router = express.Router();
+  const router = Router();
 
   router.post("/signup", doesUsernameExist(supabase), SignUpUser(supabase));
-  router.post("/login", LoginUser(supabase));
+  router.post(
+    "/login",
+
+    (req, res, next) => {
+      passport.authenticate("local", (err, user, info) => {
+        if (err) {
+          res.status(401).json({ message: "Wrong Password" });
+        }
+       
+        if (!user) {
+          res.status(401).json({ message: "Please login" });
+        }
+
+        req.login(user, function (err) {
+          res.status(200).send();
+        });
+      })(req, res, next);
+    }
+  );
+
+  router.post("/logout", LogoutUser(supabase));
+
   return router;
 };
 

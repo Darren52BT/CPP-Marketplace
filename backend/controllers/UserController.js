@@ -47,6 +47,7 @@ const UserRouter = (supabase) => {
 
   router.post("/signup", createUser(supabase));
   router.get("/session", getSession(supabase));
+
   router.get("/retrieve-session", setSession(supabase));
   return router;
 };
