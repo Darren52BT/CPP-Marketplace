@@ -15,8 +15,8 @@ const ItemCarousel = ({images}) => {
             style={{
               height: "400px",
               objectFit:"cover",
-              paddingLeft: "35%",
-              paddingRight:"35%",
+              paddingLeft: "40%",
+              paddingRight:"40%",
               paddingTop: "2%",
               paddingBottom: "5%"
             }}
