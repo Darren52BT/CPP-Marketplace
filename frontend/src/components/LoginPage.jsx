@@ -2,7 +2,7 @@ import './LoginPage.css';
 
 function LoginPage() {
     return (
-        <div className="wrapper">
+        <div className="wrapper outer">
             <div className="input-box">
                 <input type="text" placeholder="Username"/>
             </div>

@@ -35,10 +35,20 @@ function App() {
           }
         />
         <Route
+          path="/home"
+          element={
+            <>
+              <NavBar />
+              <ProductCarousel products={prods} />
+            </>
+          }
+        />
+        <Route
           path="/login"
           element={
             <>
-              <LoginPage />
+            <NavBar/>
+            <LoginPage />
             </>
           }
         />
@@ -46,6 +56,7 @@ function App() {
           path="/item"
           element={
             <>
+               <NavBar />
               <ItemPage />
             </>
           }

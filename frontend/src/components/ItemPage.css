@@ -1,9 +1,8 @@
-/* .container {
-    position: absolute;
-
+.itemImg{
+    height:200px;
+    width:250px;
+    display: flex;
 }
-
-img {
-    width: 250px;
-    height: 100px;
-} */
+.text{
+    text-align: right;
+}
