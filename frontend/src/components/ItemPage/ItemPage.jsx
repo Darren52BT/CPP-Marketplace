@@ -15,11 +15,31 @@
 import ItemCarousel from "../ItemCarousel/ItemCarousel";
 
 function ItemPage() {
+
+
     let images = [
         {
           image:
             "https://i.ebayimg.com/images/g/Nb8AAOSwR3tlsXLe/s-l1600.jpg"
         },
+        {
+            image:
+              "https://i.ebayimg.com/images/g/Nb8AAOSwR3tlsXLe/s-l1600.jpg"
+          }
+          ,
+          {
+            image:
+              "https://i.ebayimg.com/images/g/Nb8AAOSwR3tlsXLe/s-l1600.jpg"
+          },
+          {
+            image:
+              "https://i.ebayimg.com/images/g/Nb8AAOSwR3tlsXLe/s-l1600.jpg"
+          }
+          ,
+          {
+            image:
+              "https://i.ebayimg.com/images/g/Nb8AAOSwR3tlsXLe/s-l1600.jpg"
+          }
     ];
 
     return (

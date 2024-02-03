@@ -1,33 +1,22 @@
 import React, {useState} from 'react';
+import {Image, Carousel, CarouselItem } from "react-bootstrap";
 
 const ItemCarousel = ({images}) => {
-    const [activeIndex, setActiveIndex] = useState(0);
-
-    const nextSlide = () => {
-        setActiveIndex((prevIndex) => 
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-        );
-    };
-    const prevSlide = () => {
-        setActiveIndex((prevIndex) =>
-          prevIndex === 0 ? images.length - 1 : prevIndex - 1
-        );
-    };
-    return (
-        <div className="carousel">
-          <button onClick={prevSlide} className="carousel__btn carousel__btn--prev">
-            &lt;
-          </button>
-          <img
-            src={images[activeIndex]}
-            alt={`Slide ${activeIndex}`}
-            className="carousel__img"
+  const [index, setIndex] = useState(0);
+  const handleSelect = (selectedIndex) => {
+    setIndex(selectedIndex);
+  };
+  return (
+    <Carousel activeIndex={index} onSelect={handleSelect} value={3000} wrap>
+      {images.map((image, imageIndex) => (
+        <CarouselItem key={imageIndex}>
+          <Image
+            src ={image.image}
           />
-          <button onClick={nextSlide} className="carousel__btn carousel__btn--next">
-            &gt;
-          </button>
-        </div>
-    );
+        </CarouselItem>
+      ))}
+    </Carousel>
+  );
 };
 
 export default ItemCarousel;

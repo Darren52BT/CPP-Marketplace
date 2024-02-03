@@ -6,6 +6,7 @@ import ItemCard from "./components/ItemCard/ItemCard";
 import Gridview from "./components/Gridview/Gridview";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SignUpPage from "./components/SignUp/SignUpPage";
+import ItemCarousel from "./components/ItemCarousel/ItemCarousel";
 let prods = [
   {
     image:
@@ -54,7 +55,7 @@ function App() {
           element={
             <>
                <NavBar />
-              <ItemCard />
+               <ItemPage/>
             </>
           }
         />
