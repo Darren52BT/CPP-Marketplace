@@ -1,5 +1,5 @@
 import "./Gridview.css";
-import ItemCard from "./ItemCard";
+import ItemCard from "../ItemCard/ItemCard";
 
 function Gridview() {
     return(

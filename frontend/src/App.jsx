@@ -1,11 +1,12 @@
-import LoginPage from "./components/LoginPage";
-import NavBar from "./components/NavBar";
+import LoginPage from "./components/Login/LoginPage";
+import NavBar from "./components/NavBar/NavBar";
 import ProductCarousel from "./components/ProductCarousel/ProductCarousel";
-import ItemPage from "./components/ItemPage";
-import ItemCard from "./components/ItemCard";
-import Gridview from "./components/Gridview";
+import ItemPage from "./components/ItemPage/ItemPage";
+import ItemCard from "./components/ItemCard/ItemCard";
+import Gridview from "./components/Gridview/Gridview";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import SignUpPage from "./components/SignUpPage";
+import SignUpPage from "./components/SignUp/SignUpPage";
+import ItemCarousel from "./components/ItemCarousel/ItemCarousel";
 let prods = [
   {
     image:
@@ -54,7 +55,7 @@ function App() {
           element={
             <>
                <NavBar />
-              <ItemCard />
+               <ItemPage/>
             </>
           }
         />
