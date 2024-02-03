@@ -1,6 +1,7 @@
 import './ItemPage.css';
 import ItemCard from "../ItemCard/ItemCard";
 import ItemCarousel from "../ItemCarousel/ItemCarousel";
+import Gridview from "../Gridview/Gridview"
 
 function ItemPage() {
 
@@ -34,10 +35,19 @@ function ItemPage() {
         <div className="ItemPage">
             <ItemCarousel images={images}/>
             <div className="itembox">
-            <ItemCard/>
-            <div className= "text">
-              <h1>Wassup</h1>
+              <h1 className='titlepage-item'>ITEM NAME</h1>
+              <h3 className='titlepage-itemPrice'>$49.99</h3>
+              <p className='titlepage-itemDescription'>ipsum dolor</p>
             </div>
+            <button className='purchase'>Purchase</button>
+            <div className='more-items'>
+              <h2>More Items</h2> 
+            </div>
+            <div class="item-row-itempage">
+              <ItemCard></ItemCard>
+              <ItemCard></ItemCard>
+              <ItemCard></ItemCard>
+              <ItemCard></ItemCard>
             </div>
         </div>
     )

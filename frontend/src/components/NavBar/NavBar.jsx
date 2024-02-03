@@ -29,15 +29,6 @@ function NavBar() {
             CPP MARKETPLACE
           </Navbar.Brand>
           <div className="ms-auto">
-            <Link to={"/"}>
-              <img
-                id="noti"
-                src="src\photos\bell.png"
-                alt="notification"
-                className="img-fluid"
-              />
-            </Link>
-
             <Link to={"/login"}>
               <img
                 id="pfp"
