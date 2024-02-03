@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import ProductCarousel from "./components/ProductCarousel/ProductCarousel";
 import ItemPage from "./components/ItemPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import SignUpPage from "./components/SignUpPage";
 let prods = [
   {
     image:
@@ -42,6 +43,8 @@ function App() {
             </>
           }
         />
+
+        <Route path="signup" element={<SignUpPage/>}/>
         <Route
           path="/item"
           element={

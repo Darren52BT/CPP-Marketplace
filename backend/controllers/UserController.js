@@ -2,22 +2,25 @@ const express = require("express");
 
 //createUser function
 
-const setSession = (supabase) =>{
-return async (req, res) =>{
-  const { token } = req.body;
-  console.log(req.body)
-  console.log(req.params)
-  console.log(req.query)
-  // Verify magic link token and retrieve session
-  const data = await supabase.auth.verifyOtp({ token_hash: token, type: 'email'})
+const setSession = (supabase) => {
+  return async (req, res) => {
+    const { token } = req.body;
+    console.log(req.body);
+    console.log(req.params);
+    console.log(req.query);
+    // Verify magic link token and retrieve session
+    const data = await supabase.auth.verifyOtp({
+      token_hash: token,
+      type: "email",
+    });
 
-  // if (error) {
-  //   return res.status(401).json({ error: 'Invalid token.' });
-  // }
+    // if (error) {
+    //   return res.status(401).json({ error: 'Invalid token.' });
+    // }
 
-  return res.json(data);
-}
-}
+    return res.json(data);
+  };
+};
 const createUser = (supabase) => {
   return async (req, res) => {
     const { email } = req.body;

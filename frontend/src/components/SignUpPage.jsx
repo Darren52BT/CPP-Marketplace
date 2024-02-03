@@ -1,22 +1,24 @@
 import { useState } from "react";
-import "./LoginPage.css";
+import "./SignUpPage.css";
 
-function LoginPage() {
-  const [loginData, setLoginData] = useState({
+function SignUpPage() {
+  const [signUpData, setSignUpData] = useState({
     username: "",
     password: "",
   });
 
   const handleInput = (e) => {
     const { name, value } = e.target;
-    setLoginData({ ...loginData, [name]: value });
+    setSignUpData({ ...signUpData, [name]: value });
+    console.log(signUpData);
   };
 
   const onSubmitHandler = async (e) => {
     e.preventDefault();
 
-    //post login data to /login
-    const url = "http://localhost:3000/login";
+    //post sign up data to /signup
+
+    const url = "http://localhost:3000/signup";
 
     const response = await fetch(url, {
       method: "POST",
@@ -24,7 +26,7 @@ function LoginPage() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(loginData),
+      body: JSON.stringify(signUpData),
     });
   };
   return (
@@ -46,12 +48,12 @@ function LoginPage() {
             onChange={handleInput}
           />
         </div>
-        <button type="submit" className="login-button">
-          Login
+        <button type="submit" className="signin-button">
+          SignUp
         </button>
       </div>
     </form>
   );
 }
 
-export default LoginPage;
+export default SignUpPage;
