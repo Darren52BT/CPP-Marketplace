@@ -1,3 +1,4 @@
+import NavBar from "./components/NavBar";
 import ProductCarousel from "./components/ProductCarousel/ProductCarousel";
 
 let prods = [
@@ -20,7 +21,7 @@ let prods = [
 ];
 function App() {
   return (
-    <>
+    <><NavBar/>
       <ProductCarousel products={prods} />
     </>
   );
