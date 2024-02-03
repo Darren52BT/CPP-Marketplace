@@ -67,5 +67,7 @@
   margin-top: 70px;
   display: flex;
   flex-direction: row;
+  flex-flow: wrap;
   justify-content: space-evenly;
+  row-gap: 20px;
 }
