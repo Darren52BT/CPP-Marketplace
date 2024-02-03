@@ -2,7 +2,6 @@ const express = require("express");
 const Router = express.Router;
 const bcrypt = require("bcrypt");
 const passport = require("passport");
-const { supabase } = require("../supabase/supabase");
 
 //POST /signup
 //retrieves user registration username/password, hashes password

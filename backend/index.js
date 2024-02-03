@@ -5,6 +5,7 @@ const passport = require("passport");
 //get supabase
 const { supabase } = require("./supabase/supabase");
 const { AuthRouter } = require("./controllers/AuthController");
+const {ProductRouter} = require("./controllers/ProductController");
 const initializePassport = require("./passport/passport-config");
 //start up express
 const app = express();
@@ -44,7 +45,7 @@ app.get("/", (req, res, next) => {
 });
 
 app.use("/", AuthRouter(supabase));
-
+app.use("/", ProductRouter(supabase));
 app.listen(port, async () => {
   console.log(`Listening on port ${port}...`);
 });
