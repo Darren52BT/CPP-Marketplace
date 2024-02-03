@@ -41,6 +41,14 @@ export default function AddItemPage(){
             <div className="input-box-login">
               <input
                 type="text"
+                placeholder="Item Description"
+                name="description"
+                onChange={handleInput}
+              />
+            </div>
+            <div className="input-box-login">
+              <input
+                type="text"
                 placeholder="Item Image Url"
                 name="image_url"
                 onChange={handleInput}
