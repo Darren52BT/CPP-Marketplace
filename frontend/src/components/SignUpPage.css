@@ -8,7 +8,7 @@
     font-family: "Raleway", sans-serif;
 }
 
-.container-loginPage {
+.container-SignUpPage {
     display: flex;
     flex-direction: column;
     background: linear-gradient(to top, #027d27 25%, #2ecc71 75%);
@@ -19,7 +19,7 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
 }
 
-.user-login-title {
+.user-signUp-title {
     font-size: 50px;
     font-weight: 700;
     text-align: center;
@@ -27,11 +27,11 @@
     color: #333333;
 }
 
-.input-box-login {
+.input-box-signUp {
     margin: 10px;
 }
 
-.input-box-login input {
+.input-box-signUp input {
     width: 100%;
     height: 50px;
     background: transparent;
@@ -43,11 +43,11 @@
     padding: 20px 45px 20px 20px;
 }
 
-.input-box-login input::placeholder {
+.input-box-signUp input::placeholder {
     color: #f2f2f2;
 }
 
-.login-button {
+.signin-button {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -62,14 +62,14 @@
     font-weight: 700;
 }
 
-.sign-up-button {
+.log-in-button {
     text-align: center;
     margin-top: 15px;
     text-decoration: none;
     color: #f2f2f2;
 }
 
-.sign-up-button:hover {
+.log-in-button:hover {
     color: #333333;
 }
 
