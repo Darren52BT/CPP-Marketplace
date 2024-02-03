@@ -12,6 +12,14 @@ const ItemCarousel = ({images}) => {
         <CarouselItem key={imageIndex}>
           <Image
             src ={image.image}
+            style={{
+              height: "400px",
+              objectFit:"cover",
+              paddingLeft: "35%",
+              paddingRight:"35%",
+              paddingTop: "2%",
+              paddingBottom: "5%"
+            }}
           />
         </CarouselItem>
       ))}
