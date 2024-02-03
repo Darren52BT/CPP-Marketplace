@@ -39,6 +39,7 @@ function App() {
           path="/login"
           element={
             <>
+            <NavBar/>
               <LoginPage />
             </>
           }
@@ -49,6 +50,7 @@ function App() {
           path="/item"
           element={
             <>
+               <NavBar />
               <ItemPage />
             </>
           }

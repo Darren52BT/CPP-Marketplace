@@ -29,7 +29,7 @@ function LoginPage() {
   };
   return (
     <form onSubmit={onSubmitHandler}>
-      <div className="wrapper">
+      <div className="wrapper outer">
         <div className="input-box">
           <input
             type="text"

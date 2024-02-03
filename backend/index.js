@@ -41,3 +41,4 @@ app.use("/", AuthRouter(supabase));
 app.listen(port, async () => {
   console.log(`Listening on port ${port}...`);
 });
+

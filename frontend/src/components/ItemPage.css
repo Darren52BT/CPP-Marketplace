@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* .container {
     position: absolute;
 
@@ -7,3 +8,19 @@ img {
     width: 250px;
     height: 100px;
 } */
+=======
+.itembox{
+    display: flex;
+}
+.itemImg{
+    padding-top: 5%;
+    height:500px;
+    width:600px;
+
+}
+.text{
+    display: inline-block;
+    padding-left: 5%;
+    
+}
+>>>>>>> 5ef11808e0f6f3c9d8c1d7fde8cda79cd204f711
