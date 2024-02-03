@@ -11,7 +11,7 @@
 .container-loginPage {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to top, #027d27 25%, #2ecc71 75%);
+    background: linear-gradient(to bottom, #f2f2f2, #2ecc71, #027d27);
     height: 65vh;
     width: 50vw;
     padding: 30px;
