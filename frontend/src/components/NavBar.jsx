@@ -1,6 +1,6 @@
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
-import "./Navbar.css";
+import "./NavBar.css";
 import LoginPage from './LoginPage'
 import { Link } from "react-router-dom";
 function NavBar() {
