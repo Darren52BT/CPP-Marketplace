@@ -58,6 +58,13 @@ const LogoutUser = (supabase) =>{
     req.send("Logged out")
   }
 }
+
+//GET /isLoggedIn
+const LoggedIn = () =>{
+  return async (req, res, next) =>{
+    res.json({loggedIn: await req.isAuthenticated()})
+  }
+}
 //Error handling
 
 //sends error if username exists already
@@ -109,7 +116,7 @@ const AuthRouter = (supabase) => {
   );
 
   router.post("/logout", LogoutUser(supabase));
-
+  router.get("/isLoggedIn", LoggedIn);
   return router;
 };
 
