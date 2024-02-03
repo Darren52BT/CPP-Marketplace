@@ -1,0 +1,10 @@
+.container-addItemPage{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #f2f2f2, #2ecc71, #027d27);
+    height: 65vh;
+    width: 50vw;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}

@@ -7,6 +7,7 @@ import Gridview from "./components/Gridview/Gridview";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SignUpPage from "./components/SignUp/SignUpPage";
 import ItemCarousel from "./components/ItemCarousel/ItemCarousel";
+import AddItemPage from "./components/AddItemPage/AddItemPage";
 let prods = [
   {
     image:
@@ -43,19 +44,29 @@ function App() {
           path="/login"
           element={
             <>
-            <NavBar/>
+              <NavBar />
               <LoginPage />
             </>
           }
         />
 
-        <Route path="signup" element={<SignUpPage/>}/>
+        <Route path="signup" element={<SignUpPage />} />
         <Route
           path="/item"
           element={
             <>
-               <NavBar />
-               <ItemPage/>
+              <NavBar />
+              <ItemPage />
+            </>
+          }
+        />
+
+        <Route
+          path="/product/create"
+          element={
+            <>
+              <NavBar />
+              <AddItemPage />
             </>
           }
         />
