@@ -1,5 +1,8 @@
+import { Nav } from 'react-bootstrap';
+import NavBar from './NavBar.jsx';
+
 function App() {
-  return <></>;
+  return <NavBar></NavBar>;
 }
 
 export default App;
