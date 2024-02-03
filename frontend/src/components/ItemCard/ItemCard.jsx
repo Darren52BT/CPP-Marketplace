@@ -5,6 +5,7 @@ function ItemCard({ itemSrc, itemName, itemPrice }) {
         <a className="container-card" href="#">
             <img className="itemPictureCard" src= {itemSrc} alt="" />
             <h3 className="itemNameCard">{itemName}</h3>
+            
             <p className="itemPriceCard">{itemPrice}</p>
         </a>
     );

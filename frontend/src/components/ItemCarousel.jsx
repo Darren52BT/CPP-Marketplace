@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 
+
 const ItemCarousel = ({images}) => {
     const [activeIndex, setActiveIndex] = useState(0);
 
@@ -15,7 +16,7 @@ const ItemCarousel = ({images}) => {
     };
     return (
         <div className="carousel">
-          <button onClick={prevSlide} className="carousel__btn carousel__btn--prev">
+          <button onClick={prevSlide} className="carousel__btn carousel__btn--prev ">
             &lt;
           </button>
           <img

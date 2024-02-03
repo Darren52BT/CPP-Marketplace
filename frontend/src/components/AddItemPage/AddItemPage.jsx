@@ -2,11 +2,11 @@ import { useState } from "react";
 import './AddItemPage.css'
 export default function AddItemPage(){
 
-    const [itemData, setItemData] = useState({name:"", price: "", image_url: ""})
+    const [itemData, setItemData] = useState({name:"", price: "", image_url: "", description: ""})
 
     const handleInput = (e) =>{
         const {name, value } = e.target;
-        setItemData({...itemData, [name]: value})
+        setItemData({...itemData, [name]: value })
     }
     
     const onSubmitHandler = (e) =>{
@@ -35,6 +35,14 @@ export default function AddItemPage(){
                 type="text"
                 placeholder="Item Price"
                 name="price"
+                onChange={handleInput}
+              />
+            </div>
+            <div className="input-box-login">
+              <input
+                type="text"
+                placeholder="Item Description"
+                name="description"
                 onChange={handleInput}
               />
             </div>
