@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./LoginPage.css";
+import NavBar from "./NavBar";
 
 function LoginPage() {
   const [loginData, setLoginData] = useState({
@@ -28,29 +29,35 @@ function LoginPage() {
     });
   };
   return (
+    <>
     <form onSubmit={onSubmitHandler}>
-      <div className="wrapper outer">
-        <div className="input-box">
-          <input
-            type="text"
-            placeholder="Username"
-            name="username"
-            onChange={handleInput}
-          />
+      <div className="wrapper-outer">
+        <div className="container-loginPage">
+          <h1 className="user-login-title">User Login</h1>
+          <div className="input-box-login">
+            <input
+              type="text"
+              placeholder="Username"
+              name="username"
+              onChange={handleInput}
+            />
+          </div>
+          <div className="input-box-login">
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              onChange={handleInput}
+            />
+          </div>
+          <button type="submit" className="login-button">
+            Login
+          </button>
+          <a className="sign-up-button" href="/signup">Sign Up! Create an Account</a>
         </div>
-        <div className="input-box">
-          <input
-            type="password"
-            placeholder="Password"
-            name="password"
-            onChange={handleInput}
-          />
-        </div>
-        <button type="submit" className="login-button">
-          Login
-        </button>
       </div>
     </form>
+    </>
   );
 }
 
