@@ -1,8 +1,14 @@
-.itemImg{
-    height:200px;
-    width:250px;
+.itembox{
     display: flex;
 }
+.itemImg{
+    padding-top: 5%;
+    height:500px;
+    width:600px;
+
+}
 .text{
-    text-align: right;
+    display: inline-block;
+    padding-left: 5%;
+    
 }
