@@ -81,6 +81,7 @@ function ItemPage() {
             itemSrc={prod.image_url}
             itemName={prod.name}
             itemPrice={prod.price}
+            id={prod.id}
           />
         ))}
       </div>
