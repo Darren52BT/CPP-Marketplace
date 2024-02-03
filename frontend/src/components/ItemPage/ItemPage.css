@@ -1,14 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 .itembox{
     display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+    font-family: "Ralewar", sans-serif;
+    position: relative;
 }
-.itemImg{
-    padding-top: 5%;
-    height:500px;
-    width:600px;
 
+.titlepage-item .titlepage-itemPrice .titlepage-itemDescription {
+    margin-top: 5px;
 }
-.text{
-    display: inline-block;
-    padding-left: 5%;
-    
+
+.titlepage-item {
+    font-weight: 700;
+}
+
+.titlepage-itemPrice {
+    font-weight: 500;
+}
+
+.more-items {
+    margin-top: 10px;
+    position: absolute;
+    margin-left: 2vw;
+}
+
+.purchase {
+    position: absolute;
+    bottom: 60px;
+    right: 10vw;
+    height: 60px;
+    width: 20%;
+    background: #f2f2f2;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    color: #333333;
+    font-weight: 700;
+}
+
+.item-row-itempage {
+    background: linear-gradient(to bottom, transparent, #2ecc71, #027d27);
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
