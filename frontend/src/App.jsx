@@ -1,6 +1,7 @@
 import LoginPage from "./components/LoginPage";
 import NavBar from "./components/NavBar";
 import ProductCarousel from "./components/ProductCarousel/ProductCarousel";
+import ItemPage from "./components/ItemPage";
 import { BrowserRouter,  Route, Routes } from 'react-router-dom';
 let prods = [
   {
@@ -31,6 +32,9 @@ function App() {
       </>}/>
       <Route path="/login" element={<>
       <LoginPage/>
+      </>}/>
+      <Route path ="/item" element={<>
+      <ItemPage/>
       </>}/>
       <Route path="*" element={<h1>Error 404 page not found, please return home</h1>}/>
     </Routes>
