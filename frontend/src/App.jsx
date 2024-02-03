@@ -15,15 +15,15 @@ let prods = [
   },
   {
     image:
-      "https://cdn.shopify.com/s/files/1/0070/7032/files/trending-products_c8d0d15c-9afc-47e3-9ba2-f7bad0505b9b.png?format=jpg&quality=90&v=1614559651",
+      "https://i.insider.com/5f5a68bee6ff30001d4e81af?width=1200&format=jpeg",
   },
   {
     image:
-      "https://cdn.shopify.com/s/files/1/0070/7032/files/trending-products_c8d0d15c-9afc-47e3-9ba2-f7bad0505b9b.png?format=jpg&quality=90&v=1614559651",
+      "https://d12mivgeuoigbq.cloudfront.net/magento-media/catalog/product/0/5/05064910-11cf-4714-990e-7e896d0cd413.jpg?w=1200",
   },
   {
     image:
-      "https://cdn.shopify.com/s/files/1/0070/7032/files/trending-products_c8d0d15c-9afc-47e3-9ba2-f7bad0505b9b.png?format=jpg&quality=90&v=1614559651",
+      "https://www.digitaltrends.com/wp-content/uploads/2023/11/ps5-on-table.jpg?p=1",
   },
 ];
 function App() {
