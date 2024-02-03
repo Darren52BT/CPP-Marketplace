@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Image, Carousel, CarouselItem } from "react-bootstrap";
-
+import "./ItemCarousel.css"
 const ItemCarousel = ({images}) => {
   const [index, setIndex] = useState(0);
   const handleSelect = (selectedIndex) => {
