@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./SignUpPage.css";
-import NavBar from "./NavBar";
+import NavBar from "../NavBar/NavBar";
 
 function SignUpPage() {
   const [signUpData, setSignUpData] = useState({
@@ -8,7 +8,7 @@ function SignUpPage() {
     password: "",
   });
 
-  const handleInput = (e) => {
+  const handleInput = (e) => { 
     const { name, value } = e.target;
     setSignUpData({ ...signUpData, [name]: value });
     console.log(signUpData);

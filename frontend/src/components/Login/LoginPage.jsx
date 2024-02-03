@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./LoginPage.css";
-import NavBar from "./NavBar";
+import NavBar from "../NavBar/NavBar";
 
 function LoginPage() {
   const [loginData, setLoginData] = useState({
