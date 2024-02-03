@@ -1,13 +1,16 @@
-.container {
-    display: flex;
-}
-.items {
+.itemcard {
     width: calc(25% - 30px); 
     height: 50vh;
-    background-color: #8d8d8d;
+    background-color: #000000;
     margin: 15px; 
     text-align: center;
     line-height: 50vh; 
     color: #fff; 
     text-decoration: none; 
+}
+
+.itemPicture {
+    width: calc(100% - 30px);
+    height: 30vh;
+    margin-top: 10px;
 }

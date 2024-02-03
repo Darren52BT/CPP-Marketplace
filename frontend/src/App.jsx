@@ -1,5 +1,7 @@
 import NavBar from "./components/NavBar";
 import ProductCarousel from "./components/ProductCarousel/ProductCarousel";
+import Gridview from "./components/grid-view/Gridview.jsx";
+import ItemCard from "./components/item-card/ItemCard.jsx";
 
 let prods = [
   {
@@ -23,6 +25,7 @@ function App() {
   return (
     <><NavBar/>
       <ProductCarousel products={prods} />
+      <ItemCard/>
     </>
   );
 }
