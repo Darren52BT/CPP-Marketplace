@@ -12,7 +12,7 @@
 
 // export default ItemPage;
 
-import ItemCarousel from "./ItemCarousel";
+import ItemCarousel from "../ItemCarousel/ItemCarousel";
 
 function ItemPage() {
     let images = [
