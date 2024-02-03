@@ -52,7 +52,7 @@ function App() {
 
         <Route path="signup" element={<SignUpPage />} />
         <Route
-          path="/item"
+          path="/product/:productId"
           element={
             <>
               <NavBar />

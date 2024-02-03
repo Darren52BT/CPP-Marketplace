@@ -10,6 +10,8 @@ import {
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 import { useState } from "react";
+import hamburger from "../../photos/Hamburger_icon.png"
+import userPfp from "../../photos/user.png"
 function NavBar() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -21,7 +23,7 @@ function NavBar() {
           <Nav.Link href="#" onClick={handleShow}>
             <img
               className="hamburger-column"
-              src="src\photos\Hamburger_icon.png"
+              src={hamburger}
               alt="hamburger"
             />
           </Nav.Link>
@@ -32,7 +34,7 @@ function NavBar() {
             <Link to={"/login"}>
               <img
                 id="pfp"
-                src="src\photos\user.png"
+                src={userPfp}
                 alt="pfp"
                 className="img-fluid"
               />

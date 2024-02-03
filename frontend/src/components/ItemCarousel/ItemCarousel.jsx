@@ -9,16 +9,21 @@ const ItemCarousel = ({images}) => {
   return (
     <Carousel activeIndex={index} onSelect={handleSelect} value={3000} wrap>
       {images.map((image, imageIndex) => (
-        <CarouselItem key={imageIndex}>
+        <CarouselItem key={imageIndex} style={{
+          display: "flex",
+          justifyContent:"center",
+          marginTop:"2%"
+        }}>
           <Image
             src ={image.image}
             style={{
               height: "400px",
               objectFit:"cover",
-              paddingLeft: "40%",
-              paddingRight:"40%",
-              paddingTop: "2%",
-              paddingBottom: "5%"
+              margin: "auto"
+              // paddingLeft: "40%",
+              // paddingRight:"40%",
+              // paddingTop: "2%",
+              // paddingBottom: "5%"
             }}
           />
         </CarouselItem>
@@ -28,4 +33,3 @@ const ItemCarousel = ({images}) => {
 };
 
 export default ItemCarousel;
-
