@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.body {
+    margin:0;
+    background-color: #f2f2f2;
+}
+
+.navbar-custom {
+    background: linear-gradient(to top, #027d27, #2ecc71);
+    height: 70px;
+  }
+  
+  .navbar-custom .navbar-brand {
+    font-size: 1.5rem;
+    color: #f2f2f2; 
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    margin-left: 0;
+  }
+  
+  #noti, #pfp {
+    max-width: 40px;
+    max-height: 40px;
+  }
+
+  .hamburger-column {
+    max-width: 30px;
+    max-height: 30px;
+    margin-left: -70px;
+  }
