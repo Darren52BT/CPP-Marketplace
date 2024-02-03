@@ -5,7 +5,10 @@ export default function AddItemPage(){
     const [itemData, setItemData] = useState({name:"", price: "", image_url: "", description: ""})
 
     const handleInput = (e) =>{
-        const {name, value } = e.target;
+        let {name, value } = e.target;
+        if(name === 'price'){
+          value = parseInt(value);
+        }
         setItemData({...itemData, [name]: value })
     }
     
@@ -14,7 +17,6 @@ export default function AddItemPage(){
         
         //perform api call
 
-        console.log(itemData);
     }
     return(
 
