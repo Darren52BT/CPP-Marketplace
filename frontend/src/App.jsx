@@ -1,6 +1,7 @@
+import LoginPage from "./components/LoginPage";
 import NavBar from "./components/NavBar";
 import ProductCarousel from "./components/ProductCarousel/ProductCarousel";
-
+import { BrowserRouter,  Route, Routes } from 'react-router-dom';
 let prods = [
   {
     image:
@@ -21,9 +22,19 @@ let prods = [
 ];
 function App() {
   return (
-    <><NavBar/>
-      <ProductCarousel products={prods} />
-    </>
+
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<>
+      <NavBar/>
+      <ProductCarousel products={prods}/>
+      </>}/>
+      <Route path="/login" element={<>
+      <LoginPage/>
+      </>}/>
+      <Route path="*" element={<h1>Error 404 page not found, please return home</h1>}/>
+    </Routes>
+    </BrowserRouter>
   );
 }
 
