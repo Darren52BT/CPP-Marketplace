@@ -2,6 +2,8 @@ import LoginPage from "./components/LoginPage";
 import NavBar from "./components/NavBar";
 import ProductCarousel from "./components/ProductCarousel/ProductCarousel";
 import ItemPage from "./components/ItemPage";
+import ItemCard from "./components/ItemCard";
+import Gridview from "./components/Gridview";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SignUpPage from "./components/SignUpPage";
 let prods = [
@@ -32,6 +34,7 @@ function App() {
             <>
               <NavBar />
               <ProductCarousel products={prods} />
+              <Gridview />
             </>
           }
         />
@@ -51,7 +54,7 @@ function App() {
           element={
             <>
                <NavBar />
-              <ItemPage />
+              <ItemCard />
             </>
           }
         />

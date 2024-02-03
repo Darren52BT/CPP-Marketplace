@@ -11,7 +11,7 @@ export default function ProductCarousel({ products }) {
     setIndex(selectedIndex);
   };
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel activeIndex={index} onSelect={handleSelect} value={3000} wrap>
       {products.map((product, productIndex) => (
         <CarouselItem>
           <ProductCarouselItem
